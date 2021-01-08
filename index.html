@@ -1,10 +1,145 @@
+
 <!DOCTYPE html>
 <html>
 <title>cooph2021</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
+.w3-bar-block .w3-bar-item {padding:20px}
+</style>
 <body>
-<h1>Under Construction</h1>
-<p></p>
-<p></p>
-<a href="mailto:cooph2021@gmail.com">Email Me</a>
+
+<!-- Sidebar (hidden by default) -->
+<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button">Close Menu</a>
+  <a href="#projects" onclick="w3_close()" class="w3-bar-item w3-button">Projects</a>
+  <a href="about/" onclick="w3_close()" class="w3-bar-item w3-button">About Me</a>
+</nav>
+
+<!-- Top menu -->
+<div class="w3-top">
+  <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
+    <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
+    <div class="w3-right w3-padding-16"><a href="mailto:cooph2021@gmail.com">Email Me</a></div>
+    <div class="w3-center w3-padding-16">Projects</div>
+  </div>
+</div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+
+  <div class="w3-row-padding w3-padding-16 w3-center" id="projects">
+    <div class="w3-quarter">
+        <a href="elsf/"><img src="elsf\spacetimecube.png" alt="ELS Farm Progression Project" style="width:100%" target="_blank" rel="noopener noreferrer"></a>
+      <h3>ELS Farm Progression Project</h3>
+      <p>Studying the vegetation through the seasons on the farm in White Hall, MD</p>
+    </div>
+    <div class="w3-quarter">
+      <a href="https://arcg.is/1S0vm9"><img src="lochraven/lochraven_thumbnail.png" alt="Loch Raven's Hidden Dragon" style="width:100%" target="_blank" rel="noopener noreferrer"></a>
+      <h3>Loch Raven's Hidden Dragon</h3>
+      <p>There's a dragon hiding in Loch Raven, MD. Can you find it?</p>
+    </div>
+    <div class="w3-quarter">
+      <a href="https://storymaps.arcgis.com/stories/effcd97d9c9c41aa87766bc601195404"><img src="summit/stritasfront.jpg" alt="St Ritas School" style="width:100%"></a>
+      <h3>St Rita Church & School</h3>
+      <p>Just outside Dundalk Historic District; the St Rita Catholic Parish is an important historic community in Dundalk, MD.</p>
+    </div>
+    <div class="w3-quarter">
+      <a href="donna/"><img src="donna/donnathumbnail.png" alt="Donna" style="width:100%"></a>
+      <h3>Donna</h3>
+      <p>Rough Vehicle Photogrammetry of my 1997 2-door Jeep Cherokee Sport</p>
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-padding-16 w3-center">
+    <div class="w3-quarter">
+      <a href="springvalley/"><img src="springvalley/springvalleythumbnail.png" alt="Spring Valley County Park" style="width:100%"></a>
+      <h3>Spring Valley County Park</h3>
+      <p>A York County park in Winterstown, PA</p>
+    </div>
+    <div class="w3-quarter">
+      <a href="https://arcg.is/00K9bm0"><img src="summit/luerssenthumbnail.png" alt="Wilson Heights Farmhouse" style="width:100%"></a>
+      <h3>Wilson Heights Farmhouse</h3>
+      <p>A scene of an old farmhouse property in <br /> Wilson Heights, Baltimore, MD</p>
+    </div>
+    <div class="w3-quarter">
+      <a href="parker/"><img src="parker/parker_thumbnail.png" alt="Parker Conservation Area" style="width:100%" target="_blank" rel="noopener noreferrer"></a>
+      <h3>Parker Conservation Area</h3>
+      <p>A small conservation area in <br /> Harford County, MD</p>
+    </div>
+    <div class="w3-quarter">
+      <a href="landsat7/"><img src="landsat7/landsat7interpretation.png" alt="LandSat 7 Interpretation" style="width:100%"></a>
+      <h3>LandSat7 Interpretation</h3>
+      <p>An explanation of LandSat7 band interpretation over Baltimore, MD</p>
+    </div>
+  </div> 
+
+  <div class="w3-row-padding w3-padding-16 w3-center">
+    <div class="w3-quarter">
+      <a href="minnesota/"><img src="minnesota/workingwithlidar.png" alt="Working with LiDAR Student Lab" style="width:100%"></a>
+      <h3>Student Lab - Working with LiDAR in ArcGIS Pro</h3>
+      <p>A student lab producing DTM and bare-ground TIN of Cook County, Minnesota from provided lab data based on MN Geospatial Commons data.</p>
+    </div>
+    <div class="w3-quarter">
+      <a href="weslandcircle/"><img src="weslandcircle/weslandcirclethumbnail.png" alt="Wesland Circle Development" style="width:100%"></a>
+      <h3>Wesland Circle Development</h3>
+      <p>A class project based off of a new development in Randallstown, MD</p>
+    </div>
+
+    <div class="w3-quarter">
+      <a href="elsfgame/"><img src="elsfgame/gamethumbnail1.png" alt="ELSFarm Game" style="width:100%"></a>
+      <h3>ELS Farm Game</h3>
+      <p>Built in Unreal Engine; run through the farm and look for changes in the seasons</p>
+    </div>
+    <div class="w3-quarter">
+      <a href="https://arcg.is/1HCWf80"><img src="summit/patapscothumbnail.png" alt="West Patapsco Ave" style="width:100%"></a>
+      <h3>Old Salvation <br /> Army Building</h3>
+      <p>Old Salvation Army building on West Patapsco Avenue, Baltimore, MD</p>
+    </div>
+  </div> 
+
+
+
+
+  <!-- Footer -->
+  <!-- <footer class="w3-row-padding w3-padding-32">
+    <div class="w3-third">
+      <p>Footer Placeholder... Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+    </div>
+  -->
+<!--    <div class="w3-third">
+      <h3>BLOG POSTS</h3>
+      <ul class="w3-ul w3-hoverable">
+        <li class="w3-padding-16">
+          <img src="/w3images/workshop.jpg" class="w3-left w3-margin-right" style="width:50px">
+          <span class="w3-large">Lorem</span><br>
+          <span>Sed mattis nunc</span>
+        </li>
+        <li class="w3-padding-16">
+          <img src="/w3images/gondol.jpg" class="w3-left w3-margin-right" style="width:50px">
+          <span class="w3-large">Ipsum</span><br>
+          <span>Praes tinci sed</span>
+        </li> 
+      </ul>
+    </div> -->
+  </footer>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
 </body>
 </html>

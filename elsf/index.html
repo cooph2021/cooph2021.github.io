@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<title>cooph2021 - ELS Farm</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
+.w3-bar-block .w3-bar-item {padding:20px}
+</style>
+<body>
+
+<!-- Sidebar (hidden by default) -->
+<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button">Close Menu</a>
+  <a href="https://cooph2021.github.io" onclick="w3_close()" class="w3-bar-item w3-button">Projects</a>
+  <a href="https://cooph2021.github.io/about" onclick="w3_close()" class="w3-bar-item w3-button">About Me</a>
+</nav>
+
+<!-- Top menu -->
+<div class="w3-top">
+  <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
+    <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
+    <div class="w3-right w3-padding-16"><a href="mailto:cooph2021@gmail.com">Email Me</a></div>
+    <div class="w3-center w3-padding-16">ELS Farm Progression Project</div>
+  </div>
+</div>
+  
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+
+  <div class="w3-row-padding w3-padding-16 w3-center">
+    <div class="w3-quarter">
+        <a href="https://storymaps.arcgis.com/stories/b1350df8bd814187b79b5a79e0a66546"><img src="storymap.png" alt="ELSFarm Progression Project Story Map" style="width:100%" target="_blank" rel="noopener noreferrer"></a>
+      <h3>Original Story Map</h3>
+      <p>The original summary of the progression project.</p>
+    </div>
+
+    <div class="w3-quarter">
+        <a href="https://arcg.is/0jyHDv"><img src="spacetimecube.png" alt="ELS Farm NDVI Space-Time Cube" style="width:100%" target="_blank" rel="noopener noreferrer"></a>
+      <h3>ELS Farm Progression NDVI Space-Time Cube</h3>
+      <p>An example 3-D representation of NDVI rasters October 2019 - May 2020, aggregated by mean to 500x. Representation 3 in Web Mercator.</p>
+    </div>
+
+    <div class="w3-quarter">
+      <a href="TimeBinningNDVIRasters.gif"><img src="TimeBinningNDVIRasters.gif" alt="Space-Time Cube Animated" style="width:100%" target="_blank" rel="noopener noreferrer"></a>
+      <h3>Space-Time Cube GIF</h3>
+      <p>An animated look at the NDVI space-time cube layer-by-layer from October 2019 to May 2020.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="pointcloudsgone.png" alt="Point Clouds - No Longer Available" style="width:100%" target="_blank" rel="noopener noreferrer">
+      <h3>Colorized Point Clouds - No Longer Available</h3>
+      <p>In depth with the point clouds produced from October 2019 to May 2020, colorized by their respective NDVI orthos.</p>
+    </div>
+
+  <div class="w3-row-padding w3-padding-16 w3-center">
+    <div class="w3-quarter">
+      <img src="lineartrend.png" alt="Linear Trend Prediction" style="width:100%">
+      <h3>Linear Trend Prediction</h3>
+      <p>The linear trend model prediction created by time-enabled data predicted vegetation growth in the darker green areas of the image.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="mean.png" alt="Mean" style="width:100%">
+      <h3>Mean</h3>
+      <p>The mean of each pixel's value over time rasterized as a new image.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="stddev.png" alt="Standard Deviation" style="width:100%">
+      <h3>Standard Deviation</h3>
+      <p>The standard deviation of each pixel's value over time rasterized as a new image.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="variety.png" alt="Variety" style="width:100%">
+      <h3>Variety</h3>
+      <p>The variety found in each pixel's value over time rasterized as a new image.</p>
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-padding-16 w3-center">
+    <div class="w3-quarter">
+      <img src="ndviforecast.png" alt="NDVI Forecasting" style="width:100%">
+      <h3>NDVI Forecasts</h3>
+      <p>Current work forecasting vegetation health using Pix4D Fields and ArcGIS Pro's Space-Time Pattern Mining toolbox. </p>
+    </div>
+  <!--  <div class="w3-quarter">
+      <img src="mean.png" alt="Mean" style="width:100%">
+      <h3>Mean</h3>
+      <p>The mean of each pixel's value over time rasterized as a new image.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="stddev.png" alt="Standard Deviation" style="width:100%">
+      <h3>Standard Deviation</h3>
+      <p>The standard deviation of each pixel's value over time rasterized as a new image.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="variety.png" alt="Variety" style="width:100%">
+      <h3>Variety</h3>
+      <p>The variety found in each pixel's value over time rasterized as a new image.</p>
+    </div>
+  </div>
+-->
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
+</html>
